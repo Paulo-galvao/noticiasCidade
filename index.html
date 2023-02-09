@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css" />
+    <title>Notícias cidade - Seu site de notícias</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <section class="menu">
+                <div class="logo-menu">
+                    <img src="Imagens/logo.png" alt="logo notícias cidade">
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Brasil</a></li>
+                        <li><a href="#">Internacional</a></li>
+                        <li><a href="#">Economia</a></li>
+                        <li><a href="#">Saúde</a></li>
+                        <li><a href="#">Ciência</a></li>
+                        <li><a href="#">Fotos</a></li>
+                    </ul>
+                </nav>
+                <div class="map-menu"></div>
+                <ul class="mob-menu" onclick="showMenu()">
+                    <li class="line"></li>
+                    <li class="line"></li>
+                    <li class="line"></li>
+                </ul>
+                <ul class="nav-mob" id="nav-mob">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Brasil</a></li>
+                    <li><a href="#">Internacional</a></li>
+                    <li><a href="#">Economia</a></li>
+                    <li><a href="#">Saúde</a></li>
+                    <li><a href="#">Ciência</a></li>
+                    <li><a href="#">Fotos</a></li>
+                </ul>
+            </section><!--  menu -->
+        </div><!-- container -->
+    </header>
+    <main>
+        <div class="container">
+            <section class="news">
+                <div class="column-news">
+                    <section class="column-1">
+                        <div class="column-row-1">
+                            <h2 class="news-title">Destaque</h2>
+                            <h3 class="sec-title">Nova Legislação</h3>
+                            <img src="Imagens/taxi.jpg" alt="carros no transito">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="">Leia mais...</a>
+                        </div>
+                        <div class="column-row-2">
+                            <h2 class="news-title">Mundo</h2>
+                            <a href="#">
+                                <div class="item">
+                                    <img src="Imagens/cidade.jpg" alt="cidade">
+                                    <div>
+                                        <h4>USA TENTAM NOVO A</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a><hr>
+                            <a href="#">
+                                <div class="item">
+                                    <img src="Imagens/cidade.jpg" alt="cidade">
+                                    <div>
+                                        <h4>GUERRA NA SÍRIA</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a><hr>
+                            <a href="#">
+                                <div class="item">
+                                    <img src="Imagens/cidade.jpg" alt="cidade">
+                                    <div>
+                                        <h4>RUSSIA APROVA LEI</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a><hr>
+                            <a href="#">
+                                <div class="item">
+                                    <img src="Imagens/cidade.jpg" alt="cidade">
+                                    <div>
+                                        <h4>USA TENTAM NOVO </h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="column-2">
+                        <div class="column-row-1">
+                            <h2 class="news-title">Última Entrevista</h2>
+                            <h3 class="sec-title">Entrevista com Felipe Silva</h3>
+                            <img src="Imagens/doutor.jpg" alt="médico">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="">Leia mais...</a>
+                        </div>
+                        <div class="column-row-2">
+                            <h2 class="news-title">Notícias Recentes</h2>
+                            <a href="#">
+                                <div class="item">
+                                    <img src="Imagens/tecnologia.jpg" alt="cidade">
+                                    <div>
+                                        <h4>NOVAS TECNOLOGIAS</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a><hr>
+                            <a href="#">
+                                <div class="item">
+                                    <img src="Imagens/tecnologia.jpg" alt="cidade">
+                                    <div>
+                                        <h4>NOVAS TECNOLOGIAS</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a><hr>
+                            <a href="#">
+                                <div class="item">
+                                    <img src="Imagens/tecnologia.jpg" alt="cidade">
+                                    <div>
+                                        <h4>NOVAS TECNOLOGIAS</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a><hr>
+                            <a href="#">
+                                <div class="item">
+                                    <img src="Imagens/tecnologia.jpg" alt="cidade">
+                                    <div>
+                                        <h4>NOVAS TECNOLOGIAS</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a><hr> 
+                        </div>
+                    </section>
+                </div><!-- column-news -->
+                <aside>
+                    <section class="interview">
+                        <h2 class="news-title">Entrevistas</h2>
+                        <ul class="interview-list">
+                            <li><a href="#">José Almeida</a></li>
+                            <li><a href="#">Felipe Silva</a></li>
+                            <li><a href="#">Renato Rodrigues</a></li>
+                            <li><a href="#">Abelardo Silveira</a></li>
+                            <li><a href="#">Andre Carlos</a></li>
+                            <li><a href="#">Marcio Mello</a></li>
+                            <li><a href="#">João Pedro</a></li>
+                            <li><a href="#">Fernando Weiss</a></li>
+                        </ul>
+                    </section><!-- interview-->
+                    <h2 class="news-title">News</h2>
+                    <form action="#">
+                        <label for="email">E-mail:</label>
+                        <input type="text" placeholder="E-mail">
+                        <input type="submit" value="Cadastrar" class="register">
+                    </form>
+                </aside>
+            </section><!-- news --> 
+        </div><!-- container -->
+    </main>
+    <footer>
+        <div class="container">
+            &#169; Copyright 2000-<span id="year"></span> Notícias cidade
+        </div>      
+    </footer>
+    <script src="Script/main.js"></script>
+</body>
+</html>

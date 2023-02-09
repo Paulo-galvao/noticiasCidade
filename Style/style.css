@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+:root {
+    --menu-red: #b10333;
+    --menu-current: #de003e;
+    --menu-hover: #690028;
+    --main-title-bg: #294c71;
+}
+header {
+    background-image: url(../Imagens/fundo.png);
+    height: 233px;
+}
+.container {
+    width: 57vw;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+}
+/** menu **/
+.menu {
+    height: 176px;
+}
+.logo-menu {
+    padding: 25px 0;
+}
+nav .nav-menu {
+    display: flex;
+    background-color: var(--menu-red);
+    width: 640px;
+    position: relative;
+    z-index: 10;
+}
+.nav-menu li {
+    padding: 14px 22px;
+    cursor: pointer;
+    background: url(../Imagens/divisor.png) no-repeat left center;
+}
+.nav-menu li:first-child {
+    background: none;
+}
+.nav-menu, .nav-mob .current {
+    background-color: var(--menu-current) !important;
+}
+.nav-menu a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.nav-menu a:hover {
+    color: var(--menu-hover);
+}
+.map-menu {
+    background-image: url(../Imagens/detalhe-topo.png);
+    height: 176px;
+    width: 179px;
+    position: absolute;
+    top: 0;
+    right: 285px;
+}
+
+.mob-menu {
+    display: none;
+}
+.nav-mob {
+    display: none;
+}
+
+/** main **/
+
+.news {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.news-title {
+    font-size: 16px;
+    color: #fff;
+    background: var(--main-title-bg);
+    padding: 4px;
+}
+.column-news {
+    display: flex;
+    justify-content: space-between;
+    width: 72%;
+}
+.column-news img {
+    width: 100%;
+}
+.column-1 {    
+    width: 47%;   
+}
+.column-row-1 {
+    padding: 5px;
+    background: url(../Imagens/fundo-caixa.png);
+    margin-bottom: 15px;
+}
+.sec-title {
+    font-size: 16px;
+    background: var(--menu-red);
+    color: #fff;
+    padding: 2px;
+    margin: 10px 0; 
+}
+.column-row-2 {
+    background: url(../Imagens/fundo-caixa.png);
+    padding: 5px;
+}
+.column-row-2 a {
+    text-decoration: none;
+}
+.item {
+    display: flex;
+    padding: 10px 0;
+    background: #fff;
+}
+.item img {
+    width: 80px;
+}
+.item h4 {
+    font-size: 13px;
+    color: #3e7ab9;
+}
+.item p {
+    font-size: 12px;
+    color: #000;
+}
+.column-2 {
+    width: 47%;
+}
+/** aside **/
+
+aside {
+    width: 24%;
+    background: url(../Imagens/fundo-caixa.png);
+    padding: 4px;
+    
+}
+
+.interview {
+    margin-bottom: 15px;
+}
+.interview-list {
+    padding: 10px 5px;
+}
+.interview-list li {
+    padding: 10px 0;
+    font-size: 14px;
+    background: #fff;
+}
+.interview-list a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    
+}
+.interview-list a:hover {
+    background: url(../Imagens/marcador.png) left center no-repeat;
+    padding-left: 20px;
+    color: #a1a1a1;
+}
+
+/** form **/
+
+form {
+    background: url(../Imagens/fundo-caixa.png);
+    padding: 10px 5px;
+    font-size: 14px;
+    background: #fff;
+}
+form input {
+    margin: 10px 0;
+    padding: 5px ;
+    width: 80%;
+}
+.register {
+    cursor: pointer;
+    background: var(--menu-red);
+    border: 1px solid var(--menu-hover);
+    color: #fff;
+}
+
+footer {
+    background: var(--main-title-bg);
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:1000px) {
+    .container {
+        width: 100%;
+    }
+    .map-menu {
+        right: 0;
+    }
+}
+
+@media (max-width:668px) {
+
+    nav .nav-menu {
+        display: none;
+    }
+    .mob-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        position: relative;
+        left: 50px;
+        
+    }
+    .mob-menu .line {
+        background: var(--menu-red);
+        height: 8px;
+        width: 45px;
+        border-radius: 5px;
+    }
+
+    .nav-mob-show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        z-index: 10;
+        position: relative;
+        background-color: var(--menu-red);
+        top: 62px;
+    }
+    .nav-mob li {
+        padding: 30px 0;
+        background: url(../Imagens/divisor-horizontal.png) repeat-x center bottom;
+    }
+    .nav-mob li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+    .news {
+        flex-direction: column;
+        
+    }
+    .column-news {
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .column-1, .column-2, aside {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
